@@ -50,13 +50,13 @@ class Config:
     # Number of Predictors
     PREDICTORS = 2
     # Number of Trainers
-    TRAINERS = 2
+    TRAINERS = 4
 
     # Device
     DEVICE = 'gpu:0'
 
     # Enable the dynamic adjustment (+ waiting time to start it)
-    DYNAMIC_SETTINGS = True
+    DYNAMIC_SETTINGS = False
     DYNAMIC_SETTINGS_STEP_WAIT = 20
     DYNAMIC_SETTINGS_INITIAL_WAIT = 10
 
