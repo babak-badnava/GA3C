@@ -63,27 +63,36 @@ class Server:
         self.agents[-1].start()
 
     def remove_agent(self):
-        self.agents[-1].exit_flag.value = True
-        self.agents[-1].join()
-        self.agents.pop()
+        
+        for p in self.agents:
+            p.exit_flag.value = True
+        for p in self.agents:
+            p.join()
+            self.agents.pop()
 
     def add_predictor(self):
         self.predictors.append(ThreadPredictor(self, len(self.predictors)))
         self.predictors[-1].start()
 
     def remove_predictor(self):
-        self.predictors[-1].exit_flag = True
-        self.predictors[-1].join()
-        self.predictors.pop()
+        
+        for p in self.predictors:
+            p.exit_flag = True
+        for p in self.predictors:
+            p.join()
+            self.predictors.pop()
 
     def add_trainer(self):
         self.trainers.append(ThreadTrainer(self, len(self.trainers)))
         self.trainers[-1].start()
 
     def remove_trainer(self):
-        self.trainers[-1].exit_flag = True
-        self.trainers[-1].join()
-        self.trainers.pop()
+        
+        for p in self.trainers:
+            p.exit_flag = True
+        for p in self.trainers:
+            p.join()
+            self.trainers.pop()
 
     def train_model(self, x_, r_, a_, trainer_id):
         self.model.train(x_, r_, a_, trainer_id)
@@ -122,11 +131,20 @@ class Server:
                 self.stats.should_save_model.value = 0
 
             time.sleep(0.01)
-
+        
+        print('Finished. Exiting subprocesses ...')
+        join_start=time.time()
         self.dynamic_adjustment.exit_flag = True
+        self.dynamic_adjustment.join()
         while self.agents:
             self.remove_agent()
         while self.predictors:
             self.remove_predictor()
         while self.trainers:
             self.remove_trainer()
+        self.stats.exit_flag.value = True
+        self.stats.join()
+        print('Exit. Joining takes %.2f s' % (time.time()-join_start))
+            
+        
+        
