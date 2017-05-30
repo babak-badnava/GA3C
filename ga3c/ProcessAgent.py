@@ -72,7 +72,11 @@ class ProcessAgent(Process):
         # put the state in the prediction q
         self.prediction_q.put((self.id, state))
         # wait for the prediction to come back
-        p, v = self.wait_q.get()
+        try:
+            p, v = self.wait_q.get(10)
+        except:
+            return None, None
+            
         return p, v
 
     def select_action(self, prediction):
@@ -90,13 +94,21 @@ class ProcessAgent(Process):
         time_count = 0
         reward_sum = 0.0
 
-        while not done:
+        while not done and self.exit_flag.value == 0:
+            
             # very first few frames
             if self.env.current_state is None:
                 self.env.step(0)  # 0 == NOOP
                 continue
 
             prediction, value = self.predict(self.env.current_state)
+            if prediction is None and value is None: 
+                if self.exit_flag.value !=0: 
+                    break
+                else:
+                    print("Warning: couldn't get prediction. Giving up.")
+                    continue
+             
             action = self.select_action(prediction)
             reward, done = self.env.step(action)
             reward_sum += reward
