@@ -47,13 +47,21 @@ class ThreadPredictor(Thread):
             dtype=np.float32)
 
         while not self.exit_flag:
-            ids[0], states[0] = self.server.prediction_q.get()
+            try:
+                ids[0], states[0] = self.server.prediction_q.get(timeout=0.1)
+            except:
+                continue
 
             size = 1
             while size < Config.PREDICTION_BATCH_SIZE and not self.server.prediction_q.empty():
-                ids[size], states[size] = self.server.prediction_q.get()
-                size += 1
-
+                try:
+                    ids[size], states[size] = self.server.prediction_q.get(timeout=0.1)
+                    size += 1
+                except:
+                    if self.exit_flag: break
+            
+            if self.exit_flag: break
+             
             batch = states[:size]
             p, v = self.server.model.predict_p_and_v(batch)
 
