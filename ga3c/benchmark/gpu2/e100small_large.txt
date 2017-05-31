@@ -1,0 +1,148 @@
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.8.0 locally
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: GeForce GTX TITAN Black
+major: 3 minor: 5 memoryClockRate (GHz) 0.98
+pciBusID 0000:03:00.0
+Total memory: 5.94GiB
+Free memory: 5.68GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN Black, pci bus id: 0000:03:00.0)
+[Time:       34] [Episode:        1 Score:   -21.0000] [RScore:   -21.0000 RPPS:    26] [PPS:    27 TPS:    43] [NT:  1 NP:  1 NA: 10]
+[Time:       35] [Episode:        2 Score:   -21.0000] [RScore:   -21.0000 RPPS:    51] [PPS:    52 TPS:    43] [NT:  1 NP:  1 NA: 10]
+[Time:       37] [Episode:        3 Score:   -21.0000] [RScore:   -21.0000 RPPS:    73] [PPS:    74 TPS:    44] [NT:  1 NP:  1 NA: 10]
+[Time:       37] [Episode:        4 Score:   -21.0000] [RScore:   -21.0000 RPPS:   100] [PPS:   101 TPS:    44] [NT:  1 NP:  1 NA: 10]
+[Time:       39] [Episode:        5 Score:   -21.0000] [RScore:   -21.0000 RPPS:   125] [PPS:   126 TPS:    44] [NT:  1 NP:  1 NA: 10]
+[Time:       40] [Episode:        6 Score:   -21.0000] [RScore:   -21.0000 RPPS:   147] [PPS:   148 TPS:    44] [NT:  1 NP:  1 NA: 10]
+[Time:       42] [Episode:        7 Score:   -21.0000] [RScore:   -21.0000 RPPS:   165] [PPS:   166 TPS:    44] [NT:  1 NP:  1 NA: 10]
+[Time:       43] [Episode:        8 Score:   -20.0000] [RScore:   -20.8750 RPPS:   189] [PPS:   190 TPS:    44] [NT:  1 NP:  1 NA: 10]
+[Time:       47] [Episode:        9 Score:   -19.0000] [RScore:   -20.6667 RPPS:   198] [PPS:   199 TPS:    44] [NT:  1 NP:  1 NA: 10]
+[Time:       49] [Episode:       10 Score:   -19.0000] [RScore:   -20.5000 RPPS:   221] [PPS:   222 TPS:    44] [NT:  1 NP:  1 NA: 10]
+[Time:       72] [Episode:       11 Score:   -20.0000] [RScore:   -20.4545 RPPS:   164] [PPS:   165 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:       75] [Episode:       12 Score:   -21.0000] [RScore:   -20.5000 RPPS:   172] [PPS:   173 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:       75] [Episode:       13 Score:   -21.0000] [RScore:   -20.5385 RPPS:   185] [PPS:   186 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:       76] [Episode:       14 Score:   -21.0000] [RScore:   -20.5714 RPPS:   196] [PPS:   197 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:       79] [Episode:       15 Score:   -20.0000] [RScore:   -20.5333 RPPS:   204] [PPS:   205 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:       80] [Episode:       16 Score:   -20.0000] [RScore:   -20.5000 RPPS:   216] [PPS:   217 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:       81] [Episode:       17 Score:   -21.0000] [RScore:   -20.5294 RPPS:   227] [PPS:   228 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:       85] [Episode:       18 Score:   -20.0000] [RScore:   -20.5000 RPPS:   228] [PPS:   229 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:       89] [Episode:       19 Score:   -19.0000] [RScore:   -20.4211 RPPS:   232] [PPS:   233 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:       90] [Episode:       20 Score:   -20.0000] [RScore:   -20.4000 RPPS:   243] [PPS:   244 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      107] [Episode:       21 Score:   -21.0000] [RScore:   -20.4286 RPPS:   213] [PPS:   214 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      112] [Episode:       22 Score:   -21.0000] [RScore:   -20.4545 RPPS:   212] [PPS:   213 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      114] [Episode:       23 Score:   -21.0000] [RScore:   -20.4783 RPPS:   218] [PPS:   219 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      121] [Episode:       24 Score:   -21.0000] [RScore:   -20.5000 RPPS:   214] [PPS:   215 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      122] [Episode:       25 Score:   -19.0000] [RScore:   -20.4400 RPPS:   223] [PPS:   224 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      123] [Episode:       26 Score:   -20.0000] [RScore:   -20.4231 RPPS:   230] [PPS:   231 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      129] [Episode:       27 Score:   -20.0000] [RScore:   -20.4074 RPPS:   229] [PPS:   230 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      132] [Episode:       28 Score:   -19.0000] [RScore:   -20.3571 RPPS:   233] [PPS:   234 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      133] [Episode:       29 Score:   -19.0000] [RScore:   -20.3103 RPPS:   241] [PPS:   242 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      134] [Episode:       30 Score:   -20.0000] [RScore:   -20.3000 RPPS:   249] [PPS:   250 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      147] [Episode:       31 Score:   -21.0000] [RScore:   -20.3226 RPPS:   235] [PPS:   236 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      148] [Episode:       32 Score:   -21.0000] [RScore:   -20.3438 RPPS:   239] [PPS:   240 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      151] [Episode:       33 Score:   -21.0000] [RScore:   -20.3636 RPPS:   242] [PPS:   243 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      160] [Episode:       34 Score:   -21.0000] [RScore:   -20.3824 RPPS:   234] [PPS:   235 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      160] [Episode:       35 Score:   -20.0000] [RScore:   -20.3714 RPPS:   240] [PPS:   241 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      160] [Episode:       36 Score:   -21.0000] [RScore:   -20.3889 RPPS:   247] [PPS:   248 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      167] [Episode:       37 Score:   -21.0000] [RScore:   -20.4054 RPPS:   242] [PPS:   243 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      169] [Episode:       38 Score:   -20.0000] [RScore:   -20.3947 RPPS:   246] [PPS:   247 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      175] [Episode:       39 Score:   -20.0000] [RScore:   -20.3846 RPPS:   243] [PPS:   244 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      179] [Episode:       40 Score:   -19.0000] [RScore:   -20.3500 RPPS:   245] [PPS:   246 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      184] [Episode:       41 Score:   -21.0000] [RScore:   -20.3659 RPPS:   243] [PPS:   244 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      184] [Episode:       42 Score:   -21.0000] [RScore:   -20.3810 RPPS:   248] [PPS:   249 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      189] [Episode:       43 Score:   -19.0000] [RScore:   -20.3488 RPPS:   248] [PPS:   249 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      198] [Episode:       44 Score:   -21.0000] [RScore:   -20.3636 RPPS:   242] [PPS:   243 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      201] [Episode:       45 Score:   -20.0000] [RScore:   -20.3556 RPPS:   244] [PPS:   245 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      203] [Episode:       46 Score:   -21.0000] [RScore:   -20.3696 RPPS:   247] [PPS:   248 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      210] [Episode:       47 Score:   -19.0000] [RScore:   -20.3404 RPPS:   245] [PPS:   246 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      212] [Episode:       48 Score:   -20.0000] [RScore:   -20.3333 RPPS:   248] [PPS:   249 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      217] [Episode:       49 Score:   -21.0000] [RScore:   -20.3469 RPPS:   247] [PPS:   248 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      218] [Episode:       50 Score:   -21.0000] [RScore:   -20.3600 RPPS:   250] [PPS:   251 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      220] [Episode:       51 Score:   -20.0000] [RScore:   -20.3529 RPPS:   253] [PPS:   254 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      222] [Episode:       52 Score:   -21.0000] [RScore:   -20.3654 RPPS:   255] [PPS:   256 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      231] [Episode:       53 Score:   -21.0000] [RScore:   -20.3774 RPPS:   249] [PPS:   250 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      232] [Episode:       54 Score:   -21.0000] [RScore:   -20.3889 RPPS:   253] [PPS:   254 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      234] [Episode:       55 Score:   -21.0000] [RScore:   -20.4000 RPPS:   255] [PPS:   256 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      243] [Episode:       56 Score:   -21.0000] [RScore:   -20.4107 RPPS:   249] [PPS:   250 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      244] [Episode:       57 Score:   -19.0000] [RScore:   -20.3860 RPPS:   253] [PPS:   254 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      250] [Episode:       58 Score:   -21.0000] [RScore:   -20.3966 RPPS:   251] [PPS:   252 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      254] [Episode:       59 Score:   -21.0000] [RScore:   -20.4068 RPPS:   251] [PPS:   252 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      254] [Episode:       60 Score:   -21.0000] [RScore:   -20.4167 RPPS:   255] [PPS:   256 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      269] [Episode:       61 Score:   -20.0000] [RScore:   -20.4098 RPPS:   245] [PPS:   246 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      270] [Episode:       62 Score:   -20.0000] [RScore:   -20.4032 RPPS:   248] [PPS:   249 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      270] [Episode:       63 Score:   -19.0000] [RScore:   -20.3810 RPPS:   253] [PPS:   254 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      274] [Episode:       64 Score:   -20.0000] [RScore:   -20.3750 RPPS:   253] [PPS:   254 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      279] [Episode:       65 Score:   -21.0000] [RScore:   -20.3846 RPPS:   254] [PPS:   255 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      285] [Episode:       66 Score:   -20.0000] [RScore:   -20.3788 RPPS:   252] [PPS:   253 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      291] [Episode:       67 Score:   -19.0000] [RScore:   -20.3582 RPPS:   251] [PPS:   252 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      293] [Episode:       68 Score:   -21.0000] [RScore:   -20.3676 RPPS:   253] [PPS:   254 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      294] [Episode:       69 Score:   -21.0000] [RScore:   -20.3768 RPPS:   256] [PPS:   257 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      299] [Episode:       70 Score:   -19.0000] [RScore:   -20.3571 RPPS:   255] [PPS:   256 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      303] [Episode:       71 Score:   -21.0000] [RScore:   -20.3662 RPPS:   255] [PPS:   256 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      309] [Episode:       72 Score:   -21.0000] [RScore:   -20.3750 RPPS:   253] [PPS:   254 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      310] [Episode:       73 Score:   -20.0000] [RScore:   -20.3699 RPPS:   256] [PPS:   257 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      312] [Episode:       74 Score:   -21.0000] [RScore:   -20.3784 RPPS:   258] [PPS:   259 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      315] [Episode:       75 Score:   -21.0000] [RScore:   -20.3867 RPPS:   259] [PPS:   260 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      319] [Episode:       76 Score:   -21.0000] [RScore:   -20.3947 RPPS:   258] [PPS:   259 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      327] [Episode:       77 Score:   -21.0000] [RScore:   -20.4026 RPPS:   255] [PPS:   256 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      331] [Episode:       78 Score:   -21.0000] [RScore:   -20.4103 RPPS:   255] [PPS:   256 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      332] [Episode:       79 Score:   -21.0000] [RScore:   -20.4177 RPPS:   258] [PPS:   259 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      340] [Episode:       80 Score:   -21.0000] [RScore:   -20.4250 RPPS:   254] [PPS:   255 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      349] [Episode:       81 Score:   -21.0000] [RScore:   -20.4321 RPPS:   251] [PPS:   252 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      350] [Episode:       82 Score:   -21.0000] [RScore:   -20.4390 RPPS:   253] [PPS:   254 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      351] [Episode:       83 Score:   -18.0000] [RScore:   -20.4096 RPPS:   256] [PPS:   257 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      354] [Episode:       84 Score:   -20.0000] [RScore:   -20.4048 RPPS:   257] [PPS:   258 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      357] [Episode:       85 Score:   -20.0000] [RScore:   -20.4000 RPPS:   258] [PPS:   259 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      364] [Episode:       86 Score:   -21.0000] [RScore:   -20.4070 RPPS:   256] [PPS:   257 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      366] [Episode:       87 Score:   -19.0000] [RScore:   -20.3908 RPPS:   258] [PPS:   259 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      378] [Episode:       88 Score:   -20.0000] [RScore:   -20.3864 RPPS:   253] [PPS:   254 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      381] [Episode:       89 Score:   -21.0000] [RScore:   -20.3933 RPPS:   255] [PPS:   256 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      381] [Episode:       90 Score:   -20.0000] [RScore:   -20.3889 RPPS:   257] [PPS:   258 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      389] [Episode:       91 Score:   -21.0000] [RScore:   -20.3956 RPPS:   255] [PPS:   256 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      390] [Episode:       92 Score:   -20.0000] [RScore:   -20.3913 RPPS:   256] [PPS:   257 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      395] [Episode:       93 Score:   -20.0000] [RScore:   -20.3871 RPPS:   256] [PPS:   257 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      397] [Episode:       94 Score:   -19.0000] [RScore:   -20.3723 RPPS:   258] [PPS:   259 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      397] [Episode:       95 Score:   -20.0000] [RScore:   -20.3684 RPPS:   261] [PPS:   262 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      402] [Episode:       96 Score:   -20.0000] [RScore:   -20.3646 RPPS:   260] [PPS:   261 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      408] [Episode:       97 Score:   -20.0000] [RScore:   -20.3608 RPPS:   259] [PPS:   260 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      418] [Episode:       98 Score:   -21.0000] [RScore:   -20.3673 RPPS:   255] [PPS:   256 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      424] [Episode:       99 Score:   -20.0000] [RScore:   -20.3636 RPPS:   254] [PPS:   255 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      426] [Episode:      100 Score:   -19.0000] [RScore:   -20.3500 RPPS:   256] [PPS:   257 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      426] [Episode:      101 Score:     0.0000] [RScore:   -20.1485 RPPS:   256] [PPS:   257 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      426] [Episode:      102 Score:    -6.0000] [RScore:   -20.0098 RPPS:   257] [PPS:   258 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      426] [Episode:      103 Score:   -10.0000] [RScore:   -19.9126 RPPS:   258] [PPS:   259 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      426] [Episode:      104 Score:     0.0000] [RScore:   -19.7212 RPPS:   259] [PPS:   260 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      426] [Episode:      105 Score:   -11.0000] [RScore:   -19.6381 RPPS:   260] [PPS:   261 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      426] [Episode:      106 Score:   -15.0000] [RScore:   -19.5943 RPPS:   262] [PPS:   263 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      426] [Episode:      107 Score:   -19.0000] [RScore:   -19.5888 RPPS:   264] [PPS:   265 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      426] [Episode:      108 Score:   -15.0000] [RScore:   -19.5463 RPPS:   267] [PPS:   268 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      426] [Episode:      109 Score:   -12.0000] [RScore:   -19.4771 RPPS:   269] [PPS:   270 TPS:    45] [NT:  1 NP:  1 NA: 10]
+[Time:      426] [Episode:      110 Score:    -4.0000] [RScore:   -19.3364 RPPS:   269] [PPS:   270 TPS:    45] [NT:  1 NP:  1 NA: 10]
+Finished. Exiting subprocesses ...
+Exit. Joining takes 1.86 s
+Process ProcessAgent-7:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 252, in _bootstrap
+    util._exit_function()
+  File "/usr/lib/python3.5/multiprocessing/util.py", line 314, in _exit_function
+    _run_finalizers()
+  File "/usr/lib/python3.5/multiprocessing/util.py", line 254, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.5/multiprocessing/util.py", line 186, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 198, in _finalize_join
+    thread.join()
+  File "/usr/lib/python3.5/threading.py", line 1054, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.5/threading.py", line 1070, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/popen_fork.py", line 29, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+KeyboardInterrupt
