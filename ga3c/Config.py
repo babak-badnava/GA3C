@@ -46,11 +46,11 @@ class Config:
     
     # If the dynamic configuration is on, these are the initial values.
     # Number of Agents
-    AGENTS = 32 
+    AGENTS = 10
     # Number of Predictors
-    PREDICTORS = 2
+    PREDICTORS = 1
     # Number of Trainers
-    TRAINERS = 4
+    TRAINERS = 1
 
     # Device
     DEVICE = 'gpu:0'
@@ -83,8 +83,8 @@ class Config:
     IMAGE_HEIGHT = 84
 
     # Total number of episodes and annealing frequency
-    EPISODES = 400000
-    ANNEALING_EPISODE_COUNT = 400000
+    EPISODES = 20
+    ANNEALING_EPISODE_COUNT = 20
 
     # Entropy regualrization hyper-parameter
     BETA_START = 0.01
