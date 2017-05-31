@@ -76,16 +76,34 @@ class NetworkVP:
         self.global_step = tf.Variable(0, trainable=False, name='step')
 
         # As implemented in A3C paper
-        self.n1 = self.conv2d_layer(self.x, 8, 16, 'conv11', strides=[1, 4, 4, 1])
-        self.n2 = self.conv2d_layer(self.n1, 4, 32, 'conv12', strides=[1, 2, 2, 1])
-        self.action_index = tf.placeholder(tf.float32, [None, self.num_actions])
-        _input = self.n2
+        if Config.NETWORK_SIZE == 'small':
+            
+            self.n1 = self.conv2d_layer(self.x, 8, 16, 'conv11', strides=[1, 4, 4, 1])
+            self.n2 = self.conv2d_layer(self.n1, 4, 32, 'conv12', strides=[1, 2, 2, 1])
+            self.action_index = tf.placeholder(tf.float32, [None, self.num_actions])
+            _input = self.n2
 
-        flatten_input_shape = _input.get_shape()
-        nb_elements = flatten_input_shape[1] * flatten_input_shape[2] * flatten_input_shape[3]
+            flatten_input_shape = _input.get_shape()
+            nb_elements = flatten_input_shape[1] * flatten_input_shape[2] * flatten_input_shape[3]
 
-        self.flat = tf.reshape(_input, shape=[-1, nb_elements._value])
-        self.d1 = self.dense_layer(self.flat, 256, 'dense1')
+            self.flat = tf.reshape(_input, shape=[-1, nb_elements._value])
+            self.d1 = self.dense_layer(self.flat, 256, 'dense1')
+        elif Config.NETWORK_SIZE == 'large':
+            
+            self.n1 = self.conv2d_layer(self.x, 8, 32, 'conv11', strides=[1, 1, 1, 1])
+            self.n2 = self.conv2d_layer(self.n1, 4, 32, 'conv12', strides=[1, 2, 2, 1])
+            self.n3 = self.conv2d_layer(self.n2, 4, 64, 'conv13', strides=[1, 2, 2, 1])
+            self.action_index = tf.placeholder(tf.float32, [None, self.num_actions])
+            _input = self.n3
+
+            flatten_input_shape = _input.get_shape()
+            nb_elements = flatten_input_shape[1] * flatten_input_shape[2] * flatten_input_shape[3]
+
+            self.flat = tf.reshape(_input, shape=[-1, nb_elements._value])
+            self.d1 = self.dense_layer(self.flat, 256*4, 'dense1')
+            
+        else:
+            raise NotImplementedError()
 
         self.logits_v = tf.squeeze(self.dense_layer(self.d1, 1, 'logits_v', func=None), axis=[1])
         self.cost_v = 0.5 * tf.reduce_sum(tf.square(self.y_r - self.logits_v), axis=0)

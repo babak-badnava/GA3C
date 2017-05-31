@@ -59,6 +59,11 @@ class Config:
     DYNAMIC_SETTINGS = False
     DYNAMIC_SETTINGS_STEP_WAIT = 20
     DYNAMIC_SETTINGS_INITIAL_WAIT = 10
+    
+    #########################################################################
+    # DNN parameters
+    
+    NETWORK_SIZE = 'large'
 
     #########################################################################
     # Algorithm parameters
